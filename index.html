@@ -3,7 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Kadirath-Lah AHLIN - Ingénieure Agronome</title>
+    <meta name="description" content="Portfolio de Kadirath-Lah AHLIN, Ingénieure Agronome spécialisée en gestion des ressources naturelles et recherche environnementale au Bénin.">
+    <meta name="keywords" content="ingénieure agronome, ressources naturelles, environnement, développement durable, Bénin, recherche environnementale">
+    <meta name="author" content="Kadirath-Lah AHLIN">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.example.com/">
+    <meta property="og:title" content="Kadirath-Lah AHLIN - Ingénieure Agronome">
+    <meta property="og:description" content="Portfolio de Kadirath-Lah AHLIN, Ingénieure Agronome spécialisée en gestion des ressources naturelles et recherche environnementale.">
+    <meta property="og:image" content="https://www.example.com/Kadirath.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.example.com/">
+    <meta property="twitter:title" content="Kadirath-Lah AHLIN - Ingénieure Agronome">
+    <meta property="twitter:description" content="Portfolio de Kadirath-Lah AHLIN, Ingénieure Agronome spécialisée en gestion des ressources naturelles et recherche environnementale.">
+    <meta property="twitter:image" content="https://www.example.com/Kadirath.jpg">
+    
+    <title>Kadirath-Lah AHLIN | Ingénieure Agronome - Gestion des Ressources Naturelles</title>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.example.com/">
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -12,6 +39,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- AOS Library for scroll animations -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Structured data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Kadirath-Lah AHLIN",
+      "jobTitle": "Ingénieure Agronome",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ouidah",
+        "addressCountry": "Bénin"
+      },
+      "email": "mailto:ahlinkadirath@gmail.com",
+      "telephone": "+229-66395373",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Université d'Abomey-Calavi"
+      },
+      "url": "https://www.example.com",
+      "knowsAbout": ["Gestion des ressources naturelles", "Recherche environnementale", "Développement durable", "Agronomie"]
+    }
+    </script>
+    
     <!-- Custom CSS -->
     <style>
         /* Enhanced Global Styles */
@@ -440,6 +491,28 @@
             padding: 25px 0;
         }
 
+        /* Skip to main content for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--dark-green);
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Focus styles for accessibility */
+        a:focus, button:focus {
+            outline: 2px solid var(--primary-green);
+            outline-offset: 2px;
+        }
+
         /* Responsive Adjustments */
         @media (max-width: 992px) {
             .hero-title {
@@ -511,10 +584,13 @@
     </style>
 </head>
 <body>
+    <!-- Skip to main content for screen readers -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">K. AHLIN</a>
+            <a class="navbar-brand" href="#" aria-label="Accueil - Kadirath-Lah AHLIN">K. AHLIN</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -533,7 +609,7 @@
                         <a class="nav-link" href="#education">Formation</a>
                     </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="#experience">Actualités</a>
+                        <a class="nav-link" href="#news">Actualités</a>
                     </li>
                      <li class="nav-item">
                         <a class="nav-link" href="biblio.html">Ma Bibliographie</a>
@@ -562,516 +638,541 @@
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="section-padding">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
-                    <img src="Kadirath.jpg" alt="Portrait" class="img-fluid rounded shadow-lg">
-                </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <h2 class="fw-bold mb-4 section-title">À propos de moi</h2>
-                    <p class="lead mb-4">Je suis une ingénieure agronome spécialisée dans la gestion des ressources naturelles, avec une passion pour la recherche environnementale et le développement durable.</p>
-                    <p>Mon parcours professionnel m'a permis d'explorer divers projets et enquêtes, chacun apportant une expérience unique. Ces opportunités m'ont offert l'occasion de renforcer et d'enrichir mes compétences dans le domaine de collecte de données et de gestion des ressources naturelles.</p>
-                    <div class="row mt-4">
-                        <div class="col-md-6">
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="fas fa-user me-2 text-primary-green"></i><strong>Nom :</strong> AHLIN Kadirath-Lah</li>
-                                <li class="mb-2"><i class="fas fa-flag me-2 text-primary-green"></i><strong>Nationalité :</strong> Béninoise</li>
-                                <li class="mb-2"><i class="fas fa-birthday-cake me-2 text-primary-green"></i><strong>Âge :</strong> 25 ans</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="fas fa-envelope me-2 text-primary-green"></i><strong>Email :</strong> ahlinkadirath@gmail.com</li>
-                                <li class="mb-2"><i class="fas fa-phone me-2 text-primary-green"></i><strong>Téléphone :</strong> +229 66395373</li>
-                                <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-primary-green"></i><strong>Localisation :</strong> Pahou, Bénin</li>
-                            </ul>
-                        </div>
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- About Section -->
+        <section id="about" class="section-padding">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                        <img src="Kadirath.jpg" alt="Portrait de Kadirath-Lah AHLIN, Ingénieure Agronome spécialisée en gestion des ressources naturelles" class="img-fluid rounded shadow-lg" loading="lazy">
                     </div>
-                    <div class="mt-4">
-                        <a href="#" class="btn btn-primary-green me-3"><i class="fas fa-download me-2"></i>Télécharger CV</a>
-                        <a href="#contact" class="btn btn-outline-dark"><i class="fas fa-envelope me-2"></i>Me contacter</a>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <h2 class="fw-bold mb-4 section-title">À propos de moi</h2>
+                        <p class="lead mb-4">Je suis une ingénieure agronome spécialisée dans la gestion des ressources naturelles, avec une passion pour la recherche environnementale et le développement durable.</p>
+                        <p>Mon parcours professionnel m'a permis d'explorer divers projets et enquêtes, chacun apportant une expérience unique. Ces opportunités m'ont offert l'occasion de renforcer et d'enrichir mes compétences dans le domaine de collecte de données et de gestion des ressources naturelles.</p>
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-user me-2 text-primary-green" aria-hidden="true"></i><strong>Nom :</strong> AHLIN Kadirath-Lah</li>
+                                    <li class="mb-2"><i class="fas fa-flag me-2 text-primary-green" aria-hidden="true"></i><strong>Nationalité :</strong> Béninoise</li>
+                                    <li class="mb-2"><i class="fas fa-birthday-cake me-2 text-primary-green" aria-hidden="true"></i><strong>Âge :</strong> 25 ans</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-envelope me-2 text-primary-green" aria-hidden="true"></i><strong>Email :</strong> ahlinkadirath@gmail.com</li>
+                                    <li class="mb-2"><i class="fas fa-phone me-2 text-primary-green" aria-hidden="true"></i><strong>Téléphone :</strong> +229 66395373</li>
+                                    <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-primary-green" aria-hidden="true"></i><strong>Localisation :</strong> Pahou, Bénin</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <a href="#" class="btn btn-primary-green me-3"><i class="fas fa-download me-2" aria-hidden="true"></i>Télécharger CV</a>
+                            <a href="#contact" class="btn btn-outline-dark"><i class="fas fa-envelope me-2" aria-hidden="true"></i>Me contacter</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section-padding bg-light-green">
+        <!-- Skills Section -->
+        <section id="skills" class="section-padding bg-light-green">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h2 class="fw-bold section-title">Mes Compétences</h2>
+                        <p class="lead">Un ensemble diversifié de compétences techniques et professionnelles</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <div class="icon-box mb-4">
+                                    <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="mb-3">Informatique</h3>
+                                <p class="mb-0">Maîtrise des outils MS Office (Word, Excel, PowerPoint) et aptitude en logiciel R pour le traitement statistique des données.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <div class="icon-box mb-4">
+                                    <i class="fas fa-language" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="mb-3">Langues</h3>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2"><i class="fas fa-check text-primary-green me-2" aria-hidden="true"></i>Mina : langue maternelle</li>
+                                    <li class="mb-2"><i class="fas fa-check text-primary-green me-2" aria-hidden="true"></i>Français : langue seconde, niveau excellent</li>
+                                    <li><i class="fas fa-check text-primary-green me-2" aria-hidden="true"></i>Anglais : langue seconde, niveau intermédiaire</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <div class="icon-box mb-4">
+                                    <i class="fas fa-leaf" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="mb-3">Autres Compétences</h3>
+                                <p class="mb-0">Production d'épices, de jus de fruits et de détox. Gestion de projets environnementaux et recherche scientifique.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+       <section id="experience" class="section-padding">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 text-center">
-                    <h2 class="fw-bold section-title">Mes Compétences</h2>
-                    <p class="lead">Un ensemble diversifié de compétences techniques et professionnelles</p>
+                    <h2 class="fw-bold section-title">Expérience Professionnelle</h2>
+                    <p class="lead">Un parcours riche en expériences diversifiées</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="icon-box mb-4">
-                                <i class="fas fa-laptop-code"></i>
+                <div class="col-12">
+                    <div class="timeline">
+                        <!-- Expériences visibles par défaut -->
+                        <div class="timeline-item">
+                            <div class="timeline-date">Juillet 2023 - Septembre 2023</div>
+                            <div class="timeline-content">
+                                <h3>CONCREE</h3>
+                                <p class="text-muted">Incubation avec le projet d'assainissement en milieu rural : construction des toilettes modernes avec le bambou et mise en place d'un système de gestion des eaux usées à base du charbon actif de bambou.</p>
                             </div>
-                            <h4 class="mb-3">Informatique</h4>
-                            <p class="mb-0">Maîtrise des outils MS Office (Word, Excel, PowerPoint) et aptitude en logiciel R pour le traitement statistique des données.</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">Janvier 2023 - Janvier 2024</div>
+                            <div class="timeline-content">
+                                <h3>UNIFY/Bénin</h3>
+                                <p class="text-muted">Point Focal de l'eau et le climat de l'UNIFY au Bénin.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">Avril 2023 - Septembre 2023</div>
+                            <div class="timeline-content">
+                                <h3>Université Cheikh Anta Diop (UCAD Sénégal)</h3>
+                                <p class="text-muted">Assistante de Recherche : Revue systématique sur la diversité, l'écologie, les modes de propagation et les types de valorisation du bambou en Afrique Sub-Saharienne. Rédaction d'articles scientifiques.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">Février 2023 - Avril 2023</div>
+                            <div class="timeline-content">
+                                <h3>Institut National de la Statistique et de la Démographie (INStaD)</h3>
+                                <p class="text-muted">Cheffe d'équipe : Recensement des structures et ménages bénéficiant ou non des services de la SGDS (Société de Gestion des Déchets et Salubrité) dans la commune de Ouidah.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">Juillet 2022 - Août 2022</div>
+                            <div class="timeline-content">
+                                <h3>Join For Water (Protos)</h3>
+                                <p class="text-muted">Inventaire des pieds de bambou à Dangbo/Bénin. Cartographie des points de présence des bambous. Enquête ethnobotanique.</p>
+                            </div>
+                        </div>
+
+                        <!-- Expériences supplémentaires cachées -->
+                        <div class="more-experiences d-none">
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">Fév. 2024 - Juil. 2025</div>
+                                <div class="timeline-content">
+                                    <h3>LAHMAQ BAMBOO</h3>
+                                    <p class="text-muted">Co-directrice : Développement de projets autour du bambou, valorisation, transformation et gestion durable.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">Nov. 2023 - Aujourd'hui</div>
+                                <div class="timeline-content">
+                                    <h3>ARDD-NGO</h3>
+                                    <p class="text-muted">Assistante de recherche freelance : rédaction scientifique, collecte, analyse et interprétation de données.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">Mars 2023</div>
+                                <div class="timeline-content">
+                                    <h3>ONG Groupe Horizon Vert</h3>
+                                    <p class="text-muted">Co-organisatrice : projet d'installation de forêts urbaines en Guinée.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">2023 - Aujourd'hui</div>
+                                <div class="timeline-content">
+                                    <h3>ONG Bénin Villes Propres</h3>
+                                    <p class="text-muted">Coordonnatrice : campagnes de salubrité, reboisements, forêts urbaines.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">Mars 2022 - Juin 2022</div>
+                                <div class="timeline-content">
+                                    <h3>Africa Bamboo Expo</h3>
+                                    <p class="text-muted">Co-directrice : coordination et organisation de l'évènement.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">Fév. 2022</div>
+                                <div class="timeline-content">
+                                    <h3>INRAB</h3>
+                                    <p class="text-muted">Assistante de recherche : étude scientifique sur la cartographie des arbres centenaires valorisables pour le reboisement urbain.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">Fév. - Juil. 2022</div>
+                                <div class="timeline-content">
+                                    <h3>Jardin Ethno-Botanique et Zoologique, UAC</h3>
+                                    <p class="text-muted">Assistante de recherche : inventaires faune & flore, cartographie du jardin (16 ha).</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">Janv. - Juin 2022</div>
+                                <div class="timeline-content">
+                                    <h3>ECRITOO</h3>
+                                    <p class="text-muted">Rédactrice web : conception d'articles variés (visa, santé, technologie, société).</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">Juil. 2020 - Janv. 2021</div>
+                                <div class="timeline-content">
+                                    <h3>SCEFC Ouidah</h3>
+                                    <p class="text-muted">Assistante technico-administrative : pépinières, suivi forestier, sensibilisations communautaires.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">Sept. 2019 - Janv. 2022</div>
+                                <div class="timeline-content">
+                                    <h3>Le Mojito, Cotonou</h3>
+                                    <p class="text-muted">Gestionnaire clientèle et restauratrice : accueil, gestion des commandes, service.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">Juil. - Oct. 2019</div>
+                                <div class="timeline-content">
+                                    <h3>SCEFC Ouidah</h3>
+                                    <p class="text-muted">Assistante technico-administrative : diagnostic organisationnel et cartographie arbres centenaires.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">Mars 2019</div>
+                                <div class="timeline-content">
+                                    <h3>Jardin Botanique et Zoologique, UAC</h3>
+                                    <p class="text-muted">Assistante du conservateur : inventaires floristiques et fauniques.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">Août 2018</div>
+                                <div class="timeline-content">
+                                    <h3>DAREF Bonou</h3>
+                                    <p class="text-muted">Stage professionnel : production d'huile de palme/palmiste, valorisation des résidus.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">Fév. - Juil. 2018</div>
+                                <div class="timeline-content">
+                                    <h3>VIP WORLD</h3>
+                                    <p class="text-muted">Chargée de l'administration : mise en place de gestion administrative, organisation de conférences.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">Juil. - Août 2017</div>
+                                <div class="timeline-content">
+                                    <h3>Dogbo / Tokpota</h3>
+                                    <p class="text-muted">Stage en milieu rural : pépinières de palmiers sélectionnés, initiation pisciculture.</p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            </div>
+
+            <!-- Bouton toggle -->
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <a href="#" id="toggle-experiences" class="btn btn-primary-green">Voir toutes les expériences</a>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section-padding bg-light-green">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="fw-bold section-title">Formation & Certifications</h2>
+                    <p class="lead">Mon parcours académique et formations complémentaires</p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Formation Universitaire -->
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
                     <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="icon-box mb-4">
-                                <i class="fas fa-language"></i>
+                        <div class="card-body p-4">
+                            <h3 class="mb-4 section-title">Formation Universitaire</h3>
+
+                            <div class="education-item mb-4">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-graduation-cap text-primary-green me-3" aria-hidden="true"></i>
+                                    <h4 class="mb-0">Diplôme de Master Professionnel en Gestion des Ressources Forestières</h4>
+                                </div>
+                                <p class="text-muted mb-1">Faculté des Sciences Agronomiques, Université d'Abomey-Calavi (2024)</p>
                             </div>
-                            <h4 class="mb-3">Langues</h4>
-                            <ul class="list-unstyled mb-0">
-                                <li class="mb-2"><i class="fas fa-check text-primary-green me-2"></i>Mina : langue maternelle</li>
-                                <li class="mb-2"><i class="fas fa-check text-primary-green me-2"></i>Français : langue seconde, niveau excellent</li>
-                                <li><i class="fas fa-check text-primary-green me-2"></i>Anglais : langue seconde, niveau intermédiaire</li>
+
+                            <div class="education-item mb-4">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-graduation-cap text-primary-green me-3" aria-hidden="true"></i>
+                                    <h4 class="mb-0">Master 2 en Gestion des Ressources Naturelles</h4>
+                                </div>
+                                <p class="text-muted mb-1">Faculté des Sciences Agronomiques, Université d'Abomey-Calavi (2022-2023)</p>
+                                <p class="mb-0">Option : Foresterie</p>
+                            </div>
+
+                            <div class="education-item mb-4">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-graduation-cap text-primary-green me-3" aria-hidden="true"></i>
+                                    <h4 class="mb-0">Master 1 en Aménagement et Gestion des Ressources Naturelles</h4>
+                                </div>
+                                <p class="text-muted mb-1">Faculté des Sciences Agronomiques, Université d'Abomey-Calavi (2021-2022)</p>
+                            </div>
+
+                            <div class="education-item mb-4">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-graduation-cap text-primary-green me-3" aria-hidden="true"></i>
+                                    <h4 class="mb-0">Licence Professionnelle en Foresterie et Gestion des Ressources Naturelles</h4>
+                                </div>
+                                <p class="text-muted mb-1">Faculté des Sciences Agronomiques, Université d'Abomey-Calavi (2020)</p>
+                            </div>
+
+                            <div class="education-item">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-graduation-cap text-primary-green me-3" aria-hidden="true"></i>
+                                    <h4 class="mb-0">Baccalauréat Scientifique (Série C)</h4>
+                                </div>
+                                <p class="text-muted mb-1">Complexe Scolaire Michel du Bois, Bénin (2016)</p>
+                                <p class="mb-0">Mention : Bien</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="col-lg-6 mb-4" data-aos="fade-left">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="mb-4 section-title">Certifications</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <div class="d-flex align-items-center mb-1">
+                                        <i class="fas fa-certificate text-primary-green me-3" aria-hidden="true"></i>
+                                        <h4 class="mb-0">Gestion de projets et organisations</h4>
+                                    </div>
+                                    <p class="text-muted mb-0">Project Academy (Nov. 2022 - Avr. 2023)</p>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="d-flex align-items-center mb-1">
+                                        <i class="fas fa-certificate text-primary-green me-3" aria-hidden="true"></i>
+                                        <h4 class="mb-0">Comprendre et analyser les enjeux du développement durable</h4>
+                                    </div>
+                                    <p class="text-muted mb-0">IFDD (2023)</p>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="d-flex align-items-center mb-1">
+                                        <i class="fas fa-certificate text-primary-green me-3" aria-hidden="true"></i>
+                                        <h4 class="mb-0">Justice climatique</h4>
+                                    </div>
+                                    <p class="text-muted mb-0">Camp international, Tunisie (Sept. 2022)</p>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="d-flex align-items-center mb-1">
+                                        <i class="fas fa-certificate text-primary-green me-3" aria-hidden="true"></i>
+                                        <h4 class="mb-0">Transition agroécologique</h4>
+                                    </div>
+                                    <p class="text-muted mb-0">Camp climat régional des jeunes, Grand Popo (Juil. 2022)</p>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="d-flex align-items-center mb-1">
+                                        <i class="fas fa-certificate text-primary-green me-3" aria-hidden="true"></i>
+                                        <h4 class="mb-0">Management QHSE (ISO 9001, 45001, 14001)</h4>
+                                    </div>
+                                    <p class="text-muted mb-0">En cours (2022)</p>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="d-flex align-items-center mb-1">
+                                        <i class="fas fa-certificate text-primary-green me-3" aria-hidden="true"></i>
+                                        <h4 class="mb-0">Management RSE / ISO 26000</h4>
+                                    </div>
+                                    <p class="text-muted mb-0">En cours (2022)</p>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="d-flex align-items-center mb-1">
+                                        <i class="fas fa-certificate text-primary-green me-3" aria-hidden="true"></i>
+                                        <h4 class="mb-0">Audit des systèmes de management / ISO 19011</h4>
+                                    </div>
+                                    <p class="text-muted mb-0">En cours (2022)</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center mb-1">
+                                        <i class="fas fa-certificate text-primary-green me-3" aria-hidden="true"></i>
+                                        <h4 class="mb-0">Management des risques / ISO 31000</h4>
+                                    </div>
+                                    <p class="text-muted mb-0">En cours (2022)</p>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="icon-box mb-4">
-                                <i class="fas fa-leaf"></i>
+            </div>
+        </div>
+        </section>
+
+        <!-- News Section (placeholder) -->
+        <section id="news" class="section-padding">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h2 class="fw-bold section-title">Actualités</h2>
+                        <p class="lead">Mes dernières activités et publications</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>Cette section sera bientôt mise à jour avec mes dernières actualités.</p>
+                        <a href="biblio.html" class="btn btn-primary-green mt-3">Consulter ma bibliographie</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Associations Section -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h2 class="fw-bold section-title">Engagements Associatifs</h2>
+                        <p class="lead">Mon implication dans la société civile et les organisations environnementales</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <div class="icon-box bg-primary-green mb-4">
+                                    <i class="fas fa-hands-helping text-white" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="mb-3">ONG BRIGHT HEART</h3>
+                                <p class="mb-0">Secrétaire administrative de l'association depuis 2019</p>
                             </div>
-                            <h4 class="mb-3">Autres Compétences</h4>
-                            <p class="mb-0">Production d'épices, de jus de fruits et de détox. Gestion de projets environnementaux et recherche scientifique.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <div class="icon-box bg-primary-green mb-4">
+                                    <i class="fas fa-tint text-white" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="mb-3">UNIFY</h3>
+                                <p class="mb-0">Point focal de l'eau et le climat au Bénin (2023)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <div class="icon-box bg-primary-green mb-4">
+                                    <i class="fas fa-tree text-white" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="mb-3">ONG GROUPE HORIZON VERT</h3>
+                                <p class="mb-0">Vice-Présidente de l'association (2023)</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Experience Section -->
-   <section id="experience" class="section-padding">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-12 text-center">
-                <h2 class="fw-bold section-title">Expérience Professionnelle</h2>
-                <p class="lead">Un parcours riche en expériences diversifiées</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="timeline">
-                    <!-- Expériences visibles par défaut -->
-                    <div class="timeline-item">
-                        <div class="timeline-date">Juillet 2023 - Septembre 2023</div>
-                        <div class="timeline-content">
-                            <h4>CONCREE</h4>
-                            <p class="text-muted">Incubation avec le projet d'assainissement en milieu rural : construction des toilettes modernes avec le bambou et mise en place d'un système de gestion des eaux usées à base du charbon actif de bambou.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-date">Janvier 2023 - Janvier 2024</div>
-                        <div class="timeline-content">
-                            <h4>UNIFY/Bénin</h4>
-                            <p class="text-muted">Point Focal de l'eau et le climat de l'UNIFY au Bénin.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-date">Avril 2023 - Septembre 2023</div>
-                        <div class="timeline-content">
-                            <h4>Université Cheikh Anta Diop (UCAD Sénégal)</h4>
-                            <p class="text-muted">Assistante de Recherche : Revue systématique sur la diversité, l'écologie, les modes de propagation et les types de valorisation du bambou en Afrique Sub-Saharienne. Rédaction d'articles scientifiques.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-date">Février 2023 - Avril 2023</div>
-                        <div class="timeline-content">
-                            <h4>Institut National de la Statistique et de la Démographie (INStaD)</h4>
-                            <p class="text-muted">Cheffe d'équipe : Recensement des structures et ménages bénéficiant ou non des services de la SGDS (Société de Gestion des Déchets et Salubrité) dans la commune de Ouidah.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-date">Juillet 2022 - Août 2022</div>
-                        <div class="timeline-content">
-                            <h4>Join For Water (Protos)</h4>
-                            <p class="text-muted">Inventaire des pieds de bambou à Dangbo/Bénin. Cartographie des points de présence des bambous. Enquête ethnobotanique.</p>
-                        </div>
-                    </div>
-
-                    <!-- Expériences supplémentaires cachées -->
-                    <div class="more-experiences d-none">
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">Fév. 2024 - Juil. 2025</div>
-                            <div class="timeline-content">
-                                <h4>LAHMAQ BAMBOO</h4>
-                                <p class="text-muted">Co-directrice : Développement de projets autour du bambou, valorisation, transformation et gestion durable.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">Nov. 2023 - Aujourd'hui</div>
-                            <div class="timeline-content">
-                                <h4>ARDD-NGO</h4>
-                                <p class="text-muted">Assistante de recherche freelance : rédaction scientifique, collecte, analyse et interprétation de données.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">Mars 2023</div>
-                            <div class="timeline-content">
-                                <h4>ONG Groupe Horizon Vert</h4>
-                                <p class="text-muted">Co-organisatrice : projet d’installation de forêts urbaines en Guinée.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">2023 - Aujourd'hui</div>
-                            <div class="timeline-content">
-                                <h4>ONG Bénin Villes Propres</h4>
-                                <p class="text-muted">Coordonnatrice : campagnes de salubrité, reboisements, forêts urbaines.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">Mars 2022 - Juin 2022</div>
-                            <div class="timeline-content">
-                                <h4>Africa Bamboo Expo</h4>
-                                <p class="text-muted">Co-directrice : coordination et organisation de l’évènement.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">Fév. 2022</div>
-                            <div class="timeline-content">
-                                <h4>INRAB</h4>
-                                <p class="text-muted">Assistante de recherche : étude scientifique sur la cartographie des arbres centenaires valorisables pour le reboisement urbain.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">Fév. - Juil. 2022</div>
-                            <div class="timeline-content">
-                                <h4>Jardin Ethno-Botanique et Zoologique, UAC</h4>
-                                <p class="text-muted">Assistante de recherche : inventaires faune & flore, cartographie du jardin (16 ha).</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">Janv. - Juin 2022</div>
-                            <div class="timeline-content">
-                                <h4>ECRITOO</h4>
-                                <p class="text-muted">Rédactrice web : conception d’articles variés (visa, santé, technologie, société).</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">Juil. 2020 - Janv. 2021</div>
-                            <div class="timeline-content">
-                                <h4>SCEFC Ouidah</h4>
-                                <p class="text-muted">Assistante technico-administrative : pépinières, suivi forestier, sensibilisations communautaires.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">Sept. 2019 - Janv. 2022</div>
-                            <div class="timeline-content">
-                                <h4>Le Mojito, Cotonou</h4>
-                                <p class="text-muted">Gestionnaire clientèle et restauratrice : accueil, gestion des commandes, service.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">Juil. - Oct. 2019</div>
-                            <div class="timeline-content">
-                                <h4>SCEFC Ouidah</h4>
-                                <p class="text-muted">Assistante technico-administrative : diagnostic organisationnel et cartographie arbres centenaires.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">Mars 2019</div>
-                            <div class="timeline-content">
-                                <h4>Jardin Botanique et Zoologique, UAC</h4>
-                                <p class="text-muted">Assistante du conservateur : inventaires floristiques et fauniques.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">Août 2018</div>
-                            <div class="timeline-content">
-                                <h4>DAREF Bonou</h4>
-                                <p class="text-muted">Stage professionnel : production d’huile de palme/palmiste, valorisation des résidus.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">Fév. - Juil. 2018</div>
-                            <div class="timeline-content">
-                                <h4>VIP WORLD</h4>
-                                <p class="text-muted">Chargée de l’administration : mise en place de gestion administrative, organisation de conférences.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-date">Juil. - Août 2017</div>
-                            <div class="timeline-content">
-                                <h4>Dogbo / Tokpota</h4>
-                                <p class="text-muted">Stage en milieu rural : pépinières de palmiers sélectionnés, initiation pisciculture.</p>
-                            </div>
-                        </div>
-
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding bg-dark-green text-white">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h2 class="fw-bold section-title">Contactez-moi</h2>
+                        <p class="lead">Disponible pour des collaborations et opportunités professionnelles</p>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Bouton toggle -->
-        <div class="row mt-4">
-            <div class="col-12 text-center">
-                <a href="#" id="toggle-experiences" class="btn btn-primary-green">Voir toutes les expériences</a>
-            </div>
-        </div>
-    </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="section-padding bg-light-green">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-12 text-center">
-                <h2 class="fw-bold section-title">Formation & Certifications</h2>
-                <p class="lead">Mon parcours académique et formations complémentaires</p>
-            </div>
-        </div>
-        <div class="row">
-            <!-- Formation Universitaire -->
-            <div class="col-lg-6 mb-4" data-aos="fade-right">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body p-4">
-                        <h4 class="mb-4 section-title">Formation Universitaire</h4>
-
-                        <div class="education-item mb-4">
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="fas fa-graduation-cap text-primary-green me-3"></i>
-                                <h5 class="mb-0">Diplôme de Master Professionnel en Gestion des Ressources Forestières</h5>
-                            </div>
-                            <p class="text-muted mb-1">Faculté des Sciences Agronomiques, Université d’Abomey-Calavi (2024)</p>
-                        </div>
-
-                        <div class="education-item mb-4">
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="fas fa-graduation-cap text-primary-green me-3"></i>
-                                <h5 class="mb-0">Master 2 en Gestion des Ressources Naturelles</h5>
-                            </div>
-                            <p class="text-muted mb-1">Faculté des Sciences Agronomiques, Université d’Abomey-Calavi (2022-2023)</p>
-                            <p class="mb-0">Option : Foresterie</p>
-                        </div>
-
-                        <div class="education-item mb-4">
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="fas fa-graduation-cap text-primary-green me-3"></i>
-                                <h5 class="mb-0">Master 1 en Aménagement et Gestion des Ressources Naturelles</h5>
-                            </div>
-                            <p class="text-muted mb-1">Faculté des Sciences Agronomiques, Université d’Abomey-Calavi (2021-2022)</p>
-                        </div>
-
-                        <div class="education-item mb-4">
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="fas fa-graduation-cap text-primary-green me-3"></i>
-                                <h5 class="mb-0">Licence Professionnelle en Foresterie et Gestion des Ressources Naturelles</h5>
-                            </div>
-                            <p class="text-muted mb-1">Faculté des Sciences Agronomiques, Université d’Abomey-Calavi (2020)</p>
-                        </div>
-
-                        <div class="education-item">
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="fas fa-graduation-cap text-primary-green me-3"></i>
-                                <h5 class="mb-0">Baccalauréat Scientifique (Série C)</h5>
-                            </div>
-                            <p class="text-muted mb-1">Complexe Scolaire Michel du Bois, Bénin (2016)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Certifications -->
-            <div class="col-lg-6 mb-4" data-aos="fade-left">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body p-4">
-                        <h4 class="mb-4 section-title">Certifications</h4>
+                <div class="row">
+                    <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-right">
+                        <h3 class="mb-4">Coordonnées</h3>
                         <ul class="list-unstyled">
                             <li class="mb-3">
-                                <div class="d-flex align-items-center mb-1">
-                                    <i class="fas fa-certificate text-primary-green me-3"></i>
-                                    <h5 class="mb-0">Gestion de projets et organisations</h5>
-                                </div>
-                                <p class="text-muted mb-0">Project Academy (Nov. 2022 - Avr. 2023)</p>
+                                <i class="fas fa-map-marker-alt me-2" aria-hidden="true"></i>
+                                <span>Ouidah, Bénin</span>
                             </li>
                             <li class="mb-3">
-                                <div class="d-flex align-items-center mb-1">
-                                    <i class="fas fa-certificate text-primary-green me-3"></i>
-                                    <h5 class="mb-0">Comprendre et analyser les enjeux du développement durable</h5>
-                                </div>
-                                <p class="text-muted mb-0">IFDD (2023)</p>
+                                <i class="fas fa-phone me-2" aria-hidden="true"></i>
+                                <span>+229 66395373</span>
                             </li>
                             <li class="mb-3">
-                                <div class="d-flex align-items-center mb-1">
-                                    <i class="fas fa-certificate text-primary-green me-3"></i>
-                                    <h5 class="mb-0">Justice climatique</h5>
-                                </div>
-                                <p class="text-muted mb-0">Camp international, Tunisie (Sept. 2022)</p>
-                            </li>
-                            <li class="mb-3">
-                                <div class="d-flex align-items-center mb-1">
-                                    <i class="fas fa-certificate text-primary-green me-3"></i>
-                                    <h5 class="mb-0">Transition agroécologique</h5>
-                                </div>
-                                <p class="text-muted mb-0">Camp climat régional des jeunes, Grand Popo (Juil. 2022)</p>
-                            </li>
-                            <li class="mb-3">
-                                <div class="d-flex align-items-center mb-1">
-                                    <i class="fas fa-certificate text-primary-green me-3"></i>
-                                    <h5 class="mb-0">Management QHSE (ISO 9001, 45001, 14001)</h5>
-                                </div>
-                                <p class="text-muted mb-0">En cours (2022)</p>
-                            </li>
-                            <li class="mb-3">
-                                <div class="d-flex align-items-center mb-1">
-                                    <i class="fas fa-certificate text-primary-green me-3"></i>
-                                    <h5 class="mb-0">Management RSE / ISO 26000</h5>
-                                </div>
-                                <p class="text-muted mb-0">En cours (2022)</p>
-                            </li>
-                            <li class="mb-3">
-                                <div class="d-flex align-items-center mb-1">
-                                    <i class="fas fa-certificate text-primary-green me-3"></i>
-                                    <h5 class="mb-0">Audit des systèmes de management / ISO 19011</h5>
-                                </div>
-                                <p class="text-muted mb-0">En cours (2022)</p>
-                            </li>
-                            <li>
-                                <div class="d-flex align-items-center mb-1">
-                                    <i class="fas fa-certificate text-primary-green me-3"></i>
-                                    <h5 class="mb-0">Management des risques / ISO 31000</h5>
-                                </div>
-                                <p class="text-muted mb-0">En cours (2022)</p>
+                                <i class="fas fa-envelope me-2" aria-hidden="true"></i>
+                                <span>ahlinkadirath@gmail.com</span>
                             </li>
                         </ul>
+                        <div class="social-icons mt-4">
+                            <a href="#" class="text-white me-2" aria-label="Profil LinkedIn"><i class="fab fa-linkedin-in fa-lg" aria-hidden="true"></i></a>
+                            <a href="#" class="text-white me-2" aria-label="Profil Twitter"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+                            <a href="#" class="text-white me-2" aria-label="Profil Facebook"><i class="fab fa-facebook-f fa-lg" aria-hidden="true"></i></a>
+                            <a href="#" class="text-white" aria-label="Profil Instagram"><i class="fab fa-instagram fa-lg" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7" data-aos="fade-left">
+                        <form id="contact-form">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="name" class="form-label visually-hidden">Votre nom</label>
+                                    <input type="text" class="form-control bg-transparent text-white" id="name" placeholder="Votre nom" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label visually-hidden">Votre email</label>
+                                    <input type="email" class="form-control bg-transparent text-white" id="email" placeholder="Votre email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label visually-hidden">Sujet</label>
+                                <input type="text" class="form-control bg-transparent text-white" id="subject" placeholder="Sujet" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label visually-hidden">Votre message</label>
+                                <textarea class="form-control bg-transparent text-white" id="message" rows="5" placeholder="Votre message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary-green"><i class="fas fa-paper-plane me-2" aria-hidden="true"></i>Envoyer le message</button>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    </section>
-
-
-    <!-- Associations Section -->
-    <section class="section-padding">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-12 text-center">
-                    <h2 class="fw-bold section-title">Engagements Associatifs</h2>
-                    <p class="lead">Mon implication dans la société civile et les organisations environnementales</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="icon-box bg-primary-green mb-4">
-                                <i class="fas fa-hands-helping text-white"></i>
-                            </div>
-                            <h4 class="mb-3">ONG BRIGHT HEART</h4>
-                            <p class="mb-0">Secrétaire administrative de l'association depuis 2019</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="icon-box bg-primary-green mb-4">
-                                <i class="fas fa-tint text-white"></i>
-                            </div>
-                            <h4 class="mb-3">UNIFY</h4>
-                            <p class="mb-0">Point focal de l'eau et le climat au Bénin (2023)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="icon-box bg-primary-green mb-4">
-                                <i class="fas fa-tree text-white"></i>
-                            </div>
-                            <h4 class="mb-3">ONG GROUPE HORIZON VERT</h4>
-                            <p class="mb-0">Vice-Présidente de l'association (2023)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section-padding bg-dark-green text-white">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-12 text-center">
-                    <h2 class="fw-bold section-title">Contactez-moi</h2>
-                    <p class="lead">Disponible pour des collaborations et opportunités professionnelles</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-right">
-                    <h4 class="mb-4">Coordonnées</h4>
-                    <ul class="list-unstyled">
-                        <li class="mb-3">
-                            <i class="fas fa-map-marker-alt me-2"></i>
-                            <span>Ouidah, Bénin</span>
-                        </li>
-                        <li class="mb-3">
-                            <i class="fas fa-phone me-2"></i>
-                            <span>+229 66395373</span>
-                        </li>
-                        <li class="mb-3">
-                            <i class="fas fa-envelope me-2"></i>
-                            <span>ahlinkadirath@gmail.com</span>
-                        </li>
-                    </ul>
-                    <div class="social-icons mt-4">
-                        <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in fa-lg"></i></a>
-                        <a href="#" class="text-white me-2"><i class="fab fa-twitter fa-lg"></i></a>
-                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f fa-lg"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-7" data-aos="fade-left">
-                    <form>
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control bg-transparent text-white" placeholder="Votre nom" required>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <input type="email" class="form-control bg-transparent text-white" placeholder="Votre email" required>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <input type="text" class="form-control bg-transparent text-white" placeholder="Sujet" required>
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control bg-transparent text-white" rows="5" placeholder="Votre message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary-green"><i class="fas fa-paper-plane me-2"></i>Envoyer le message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="py-4 bg-darker-green text-white text-center">
@@ -1081,8 +1182,8 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <a href="#" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
+    <a href="#" class="back-to-top" aria-label="Retour en haut de la page">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
     </a>
 
     <!-- Bootstrap JS -->
@@ -1138,22 +1239,35 @@
                 }
             });
         }
-            const toggleBtn = document.getElementById('toggle-experiences');
-    const moreExperiences = document.querySelector('.more-experiences');
-
-    toggleBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        moreExperiences.classList.toggle('d-none');
         
-        if (moreExperiences.classList.contains('d-none')) {
-            toggleBtn.textContent = "Voir toutes les expériences";
-        } else {
-            toggleBtn.textContent = "Masquer les expériences";
-        }
-    });
+        const toggleBtn = document.getElementById('toggle-experiences');
+        const moreExperiences = document.querySelector('.more-experiences');
+
+        toggleBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            moreExperiences.classList.toggle('d-none');
+            
+            if (moreExperiences.classList.contains('d-none')) {
+                toggleBtn.textContent = "Voir toutes les expériences";
+            } else {
+                toggleBtn.textContent = "Masquer les expériences";
+            }
+            
+            // Trigger AOS refresh after showing/hiding content
+            AOS.refresh();
+        });
+        
         window.addEventListener('scroll', checkTimeline);
         // Initial check
         checkTimeline();
+        
+        // Form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Simple form validation and submission logic would go here
+            alert('Merci pour votre message! Je vous répondrai dès que possible.');
+            this.reset();
+        });
     </script>
 </body>
 </html>
