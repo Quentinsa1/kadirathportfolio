@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliographie | Kadirath-Lah AHLIN - Ingénieure Agronome</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Library for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Enhanced Global Styles */
+        :root {
+            --primary-green: #2e7d32;
+            --dark-green: #1b5e20;
+            --darker-green: #0d3b13;
+            --light-green: #e8f5e9;
+            --lighter-green: #f1f8e9;
+            --text-dark: #333;
+            --text-medium: #555;
+            --text-light: #f5f5f5;
+            --transition: all 0.4s ease;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.7;
+            overflow-x: hidden;
+            padding-top: 80px;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--dark-green);
+        }
+
+        .section-title {
+            position: relative;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary-green), var(--dark-green));
+            border-radius: 2px;
+        }
+
+        .section-padding {
+            padding: 100px 0;
+        }
+
+        /* Improved Navbar */
+        .navbar {
+            transition: var(--transition);
+            padding: 15px 0;
+        }
+
+        .navbar.solid {
+            background-color: var(--dark-green) !important;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+        }
+
+        .bg-dark-green {
+            background-color: var(--dark-green) !important;
+        }
+
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: white !important;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            padding: 0.5rem 1.2rem !important;
+            color: rgba(255, 255, 255, 0.85) !important;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: white;
+            transition: var(--transition);
+        }
+
+        .nav-link:hover {
+            color: white !important;
+        }
+
+        .nav-link:hover:after {
+            width: 70%;
+            left: 15%;
+        }
+
+        .active {
+            color: white !important;
+        }
+
+        .active:after {
+            width: 70%;
+            left: 15%;
+        }
+
+        /* Enhanced Hero Section */
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 60vh;
+            min-height: 500px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            animation: fadeInDown 1s ease;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            animation: fadeInUp 1s ease;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Improved Buttons */
+        .btn {
+            border-radius: 50px;
+            padding: 12px 30px;
+            font-weight: 600;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .btn-primary-green {
+            background-color: var(--primary-green);
+            border-color: var(--primary-green);
+            color: white;
+        }
+
+        .btn-primary-green:hover {
+            background-color: var(--dark-green);
+            border-color: var(--dark-green);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-outline-light:hover {
+            color: var(--dark-green);
+            background-color: white;
+            border-color: white;
+        }
+
+        /* Enhanced Backgrounds */
+        .bg-light-green {
+            background-color: var(--light-green);
+        }
+
+        .bg-lighter-green {
+            background-color: var(--lighter-green);
+        }
+
+        /* Improved Icon Box */
+        .icon-box {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 32px;
+            background: linear-gradient(145deg, var(--primary-green), var(--dark-green));
+            color: white;
+            box-shadow: 0 10px 20px rgba(46, 125, 50, 0.2);
+            transition: var(--transition);
+        }
+
+        .icon-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(46, 125, 50, 0.3);
+        }
+
+        /* Enhanced Cards */
+        .card {
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            border-radius: 15px !important;
+            border: none;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        .card-img-top {
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover .card-img-top {
+            transform: scale(1.05);
+        }
+
+        /* Quote Styling */
+        .quote-card {
+            border-left: 4px solid var(--primary-green);
+            background-color: var(--lighter-green);
+        }
+
+        blockquote {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-style: italic;
+            color: var(--dark-green);
+            position: relative;
+            padding-left: 30px;
+        }
+
+        blockquote:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: -20px;
+            font-size: 4rem;
+            color: var(--primary-green);
+            font-family: Georgia, serif;
+        }
+
+        /* Milestone Styling */
+        .milestone-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 40px;
+        }
+
+        .milestone-item:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: linear-gradient(to right, var(--primary-green), var(--dark-green));
+        }
+
+        .milestone-date {
+            font-weight: 600;
+            color: var(--primary-green);
+            margin-bottom: 5px;
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: none;
+            z-index: 99;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(to right, var(--primary-green), var(--dark-green));
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            transition: var(--transition);
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+        /* Enhanced Footer */
+        footer {
+            background: linear-gradient(to right, var(--dark-green), var(--darker-green));
+            padding: 25px 0;
+        }
+
+        /* Social Icons */
+        .social-icons a {
+            display: inline-flex;
+            width: 45px;
+            height: 45px;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: all 0.4s ease;
+            margin-right: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            background-color: var(--primary-green);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .hero-title {
+                font-size: 3rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .section-padding {
+                padding: 80px 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding-top: 70px;
+            }
+            
+            .hero-section {
+                height: auto;
+                padding: 100px 0;
+                background-attachment: scroll;
+            }
+            
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .btn {
+                padding: 10px 20px;
+            }
+            
+            .section-padding {
+                padding: 60px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-green fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">K. AHLIN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#skills">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#experience">Expérience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#education">Formation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#experience">Actualités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="bibliographie.html">Ma Bibliographie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 text-center text-white hero-content">
+                    <h1 class="hero-title fw-bold mb-4">Ma Bibliographie</h1>
+                    <p class="hero-subtitle mb-5">Un récit inspirant de mon parcours, de mes passions et de ma vision pour un avenir durable</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="#identite" class="btn btn-outline-light btn-lg px-4">Mon Identité</a>
+                        <a href="#parcours" class="btn btn-primary-green btn-lg px-4">Mon Parcours</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Identité Section -->
+    <section id="identite" class="section-padding">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="fw-bold section-title">Identité et Débuts</h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="mb-4">Qui suis-je ?</h3>
+                            <p><strong>Nom complet :</strong> Kadirath-lah AHLIN</p>
+                            <p><strong>Date et lieu de naissance :</strong> Née le 02 mars 2000 à Cotonou, Bénin.</p>
+                            
+                            <h4 class="mt-4 mb-3">Souvenirs marquants de l'enfance</h4>
+                            <p>L'un des souvenirs les plus précieux de mon enfance est le moment où je courais de l'école à la maison avec mon bulletin en main, impatiente d'annoncer à mon père que j'avais une fois de plus terminée première de ma classe. Je savais que cela signifiait une glace chocolatée bien méritée !</p>
+                            <p>Un événement marquant et douloureux a aussi forgé ma résilience : à l'âge de deux ans, pressée de manger, je me suis gravement brûlée le pied avec de la pâte chaude. Cette blessure m'a empêchée de marcher pendant un moment, mais j'ai décidé de me relever et de persévérer. Aujourd'hui encore, les cicatrices me rappellent que je suis une battante, capable de surmonter toutes les épreuves.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4" data-aos="fade-left">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="mb-4">Découverte de ma passion</h3>
+                            <p>Après mon baccalauréat, mon ambition était de suivre des études de magistrature, mais mon père m'a orientée vers l'agronomie. Au fil des années, j'ai appris à aimer ce domaine, en particulier l'aménagement et la gestion des ressources naturelles.</p>
+                            <p>En master, une rencontre décisive avec le professeur Dr Césaire GNANGLÈ a changé ma perception : il m'a transmis sa passion pour le bambou. En approfondissant mes recherches, j'ai découvert les incroyables bienfaits écologiques, économiques et sociaux de cette ressource.</p>
+                            <p>Depuis 2022, ma mission est claire : faire du bambou une ressource incontournable pour un environnement sain et un avenir durable.</p>
+                            <div class="mt-4 p-3 bg-lighter-green rounded">
+                                <p class="mb-0 fst-italic">"Le bambou n'est pas qu'une plante pour moi, c'est un symbole de résilience, de flexibilité et de croissance. Comme lui, je m'efforce de m'enraciner solidement tout en m'adaptant aux défis."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parcours Section -->
+    <section id="parcours" class="section-padding bg-light-green">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="fw-bold section-title">Parcours et Évolution</h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="mb-4">Parcours scolaire et universitaire</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <div class="d-flex align-items-center mb-1">
+                                        <i class="fas fa-graduation-cap text-primary-green me-3"></i>
+                                        <h5 class="mb-0">2014 : BEPC</h5>
+                                    </div>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="d-flex align-items-center mb-1">
+                                        <i class="fas fa-graduation-cap text-primary-green me-3"></i>
+                                        <h5 class="mb-0">2016 : Baccalauréat, série C</h5>
+                                    </div>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="d-flex align-items-center mb-1">
+                                        <i class="fas fa-graduation-cap text-primary-green me-3"></i>
+                                        <h5 class="mb-0">2020 : Licence professionnelle en Aménagement et gestion des ressources naturelles</h5>
+                                    </div>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="d-flex align-items-center mb-1">
+                                        <i class="fas fa-certificate text-primary-green me-3"></i>
+                                        <h5 class="mb-0">2023 : Certification en gestion des projets et organisations</h5>
+                                    </div>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="d-flex align-items-center mb-1">
+                                        <i class="fas fa-certificate text-primary-green me-3"></i>
+                                        <h5 class="mb-0">2023 : Certification en RMQHSE</h5>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center mb-1">
+                                        <i class="fas fa-graduation-cap text-primary-green me-3"></i>
+                                        <h5 class="mb-0">2024 : Master professionnel en Aménagement et gestion des ressources forestières</h5>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="mb-4">Premiers pas dans le monde professionnel</h3>
+                            <p>J'ai débuté ma carrière en dehors de mon domaine d'études en travaillant comme serveuse au restaurant Le Mojito, où j'ai acquis des compétences en accueil, gestion des commandes et préparation de cocktails. Par la suite, j'ai été assistante de direction chez Campus Turkey, cumulant ce poste avec mon travail de serveuse en soirée.</p>
+                            <p>Aujourd'hui, je suis coordinatrice des ONG Bénin Villes Propres et Afrique Continent Propre, qui promeuvent la salubrité urbaine à travers des initiatives telles que Cotonou Ville Propre, Ouidah Ville Propre et bientôt Abidjan Ville Propre.</p>
+                            <p>Mon intégration progressive dans des projets forestiers a conduit à une reconnaissance notable lors du Forum International du Cadre de Vie, où nous avons remporté le 2ème prix pour le projet communautaire "Forêt Urbaine".</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="mb-4">Moments marquants et obstacles</h3>
+                            <ul>
+                                <li class="mb-2">Soutenance de mon master professionnel</li>
+                                <li class="mb-2">Lancement et clôture du concours Cotonou Ville Propre</li>
+                                <li>Distinction du prix Forêt Urbaine</li>
+                            </ul>
+                            <p class="mt-3">Tout au long de mon parcours, j'ai vu la main de Dieu œuvrer en ma faveur. Chaque épreuve a renforcé ma foi et ma détermination.</p>
+                            <p>Je ne me considère pas encore comme une experte, mais je suis en apprentissage constant. Mon engagement dans la recherche et les projets environnementaux me permet d'affiner mes connaissances et compétences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Réalisations Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="fw-bold section-title">Réalisations et Contributions</h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4" data-aos="fade-right">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="mb-4">Principales réalisations</h3>
+                            <ul>
+                                <li class="mb-2">Obtention de mon diplôme de master</li>
+                                <li>Coordination réussie du projet Cotonou Ville Propre</li>
+                            </ul>
+                            
+                            <h3 class="mt-4 mb-3">Distinctions</h3>
+                            <ul>
+                                <li class="mb-2">Attestation de félicitations et de reconnaissance de l'ONG Bénin Villes Propres</li>
+                                <li>2ème prix du meilleur projet communautaire pour le projet Forêt Urbaine</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4" data-aos="fade-left">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="mb-4">Projets les plus significatifs</h3>
+                            <ul>
+                                <li class="mb-2">Cotonou Ville Propre</li>
+                                <li>Collaboration avec la SGDS et le Ministère du Cadre de Vie et des Transports</li>
+                            </ul>
+                            
+                            <div class="mt-4 p-3 bg-lighter-green rounded">
+                                <p class="mb-0 fst-italic">"Chaque réalisation, qu'elle soit grande ou petite, est une étape vers un impact plus significatif. Je crois en la puissance des actions collectives pour transformer nos communautés et préserver notre environnement."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophie Section -->
+    <section class="section-padding bg-light-green">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="fw-bold section-title">Philosophie et Vision</h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-5">
+                            <h3 class="mb-4 text-center">Valeurs fondamentales</h3>
+                            
+                            <div class="row mt-4">
+                                <div class="col-md-6 mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-pray text-primary-green me-3 fa-2x"></i>
+                                        <div>
+                                            <h5>Crainte de Dieu et prière</h5>
+                                            <p class="mb-0">La foi comme fondement de toutes mes actions</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-brain text-primary-green me-3 fa-2x"></i>
+                                        <div>
+                                            <h5>Foi en ses capacités</h5>
+                                            <p class="mb-0">Croire en son potentiel pour atteindre ses objectifs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-trophy text-primary-green me-3 fa-2x"></i>
+                                        <div>
+                                            <h5>Détermination et persévérance</h5>
+                                            <p class="mb-0">Ne jamais abandonner face aux obstacles</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-shield-alt text-primary-green me-3 fa-2x"></i>
+                                        <div>
+                                            <h5>Courage et résilience</h5>
+                                            <p class="mb-0">Transformer les épreuves en forces</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-5">
+                                <h4 class="mb-4 text-center">Message à transmettre</h4>
+                                <blockquote class="text-center">
+                                    Dieu est le faiseur de miracles. Quel que soit le point de départ, Il peut transformer une vie et la conduire vers l'excellence.
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="fw-bold section-title">Projets et Ambitions</h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="mb-4">Projets actuels</h3>
+                            <ul>
+                                <li class="mb-2">Lahmaq Bamboo : Promotion de la filière bambou en Afrique de l'Ouest</li>
+                                <li class="mb-2">e-Bambou : Plateforme de mise en relation des acteurs du bambou</li>
+                                <li class="mb-2">Pépinière de jeunes plants pour la reforestation</li>
+                                <li class="mb-2">Rédaction d'un livre sur mon parcours spirituel</li>
+                                <li class="mb-2">Ouverture d'un salon de thé et cocktails</li>
+                                <li>Création d'une usine de transformation du bambou</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="mb-4">Objectifs</h3>
+                            <h5>À court terme :</h5>
+                            <ul class="mb-3">
+                                <li class="mb-2">Installation de la pépinière</li>
+                                <li class="mb-2">Lancement de e-Bambou</li>
+                                <li class="mb-2">Premières productions</li>
+                                <li class="mb-2">Formation en photographie de la nature et en peinture</li>
+                            </ul>
+                            
+                            <h5>À long terme :</h5>
+                            <ul>
+                                <li class="mb-2">Formation en Asie sur le bambou</li>
+                                <li class="mb-2">Création d'une usine de fabrication des produits dérivés en bambou</li>
+                                <li>Plantation à grande échelle des espèces de bambou</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card border-0 shadow-sm bg-lighter-green">
+                        <div class="card-body p-4">
+                            <h3 class="mb-4">Collaborations souhaitées</h3>
+                            <ul class="mb-0">
+                                <li class="mb-2">INBAR (International Network for Bamboo and Rattan)</li>
+                                <li>Des entreprises de bamboo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-padding bg-dark-green text-white">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="fw-bold section-title">Présence en ligne et contact</h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h4 class="mb-4">Réseaux sociaux</h4>
+                    <div class="social-icons mb-4">
+                        <a href="https://www.facebook.com/kadirathlah.ahlin" target="_blank">
+                            <i class="fab fa-facebook-f fa-lg"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kadirath-lah-ahlin-8a95a6212" target="_blank">
+                            <i class="fab fa-linkedin-in fa-lg"></i>
+                        </a>
+                        <a href="https://www.instagram.com/kadirathlahahlin" target="_blank">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                    </div>
+                    
+                    <h4 class="mb-4">Coordonnées</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fas fa-envelope me-2"></i>
+                            <span>ahlinkadirath@gmail.com</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone me-2"></i>
+                            <span>+229 0166395379</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card bg-lighter-green border-0">
+                        <div class="card-body p-4">
+                            <h4 class="mb-4 text-dark">Message final</h4>
+                            <p class="text-dark">Je crois en la puissance de la détermination, de la foi et du travail acharné. Chaque défi surmonté, chaque projet réalisé, et chaque personne touchée par mon travail renforce ma conviction que nous pouvons collectivement créer un avenir plus durable et équitable.</p>
+                            <p class="text-dark mb-0">N'hésitez pas à me contacter pour discuter de collaborations, de projets ou simplement échanger sur nos visions pour un monde meilleur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-darker-green text-white text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2023 Kadirath-Lah AHLIN. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS for scroll animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                document.querySelector('.navbar').classList.add('solid');
+            } else {
+                document.querySelector('.navbar').classList.remove('solid');
+            }
+        });
+
+        // Back to top button
+        const backToTopButton = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'flex';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+        
+        backToTopButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+    </script>
+</body>
+</html>
